@@ -5,7 +5,7 @@ body {
   height: 100%; /* Asegura que el contenido se ajuste al tamaño de la ventana */
 }
 
-@media (max-width: 800px) {
+@media (max-width: 995px) {
   html,
   body {
     overflow-y: auto; /* Activa el scroll */
