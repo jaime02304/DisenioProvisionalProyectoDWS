@@ -1,60 +1,219 @@
+/* El body de todos los index */
+html,
 body {
-    background-color: #01012F;
-  }
-  /* Líneas diagonales blancas de fondo */
-  body::before,
-  body::after {
-    content: "";
-    position: absolute;
-    top: -100px;
-    bottom: -100px;
-    width: 75px; /* Mitad del grosor original */
-    background-color: #ffffff;
-    transform: rotate(25deg);
-    border-radius: 10px;
-    z-index: 1; /* Las líneas estarán detrás del contenido */
-  }
+  overflow: hidden; /* Desactiva el desplazamiento */
+  height: 100%; /* Asegura que el contenido se ajuste al tamaño de la ventana */
+}
 
-  body::before {
-    left: 65%; /* Ajuste de la posición hacia la derecha */
+@media (max-width: 800px) {
+  html,
+  body {
+    overflow-y: auto; /* Activa el scroll */
+    overflow-x: hidden;
   }
+}
 
-  body::after {
-    left: 90%; /* Ajuste de la posición hacia la derecha */
-  }
+body {
+  background-color: #01012f;
+}
+/* Líneas diagonales blancas de fondo */
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  top: -100px;
+  bottom: -100px;
+  width: 75px; /* Mitad del grosor original */
+  background-color: #ffffff;
+  transform: rotate(25deg);
+  border-radius: 10px;
+  z-index: -1; /* Las líneas estarán detrás del contenido */
+}
 
-  svg{
-    margin-right: 20px;
-  }
+body::before {
+  left: 70%; /* Ajuste de la posición hacia la derecha */
+}
 
-  svg path{
-    fill: white;
-    stroke: #01012F;  /* Color del borde */
-    stroke-width: 2;
-    z-index: 2;  
-  }
-  .navegador svg {
-    border: 3px solid #01012F; /* Borde del mismo color que el SVG */
-    border-radius: 50%; /* Borde redondeado */
-    padding: 5px; /* Espacio adicional alrededor del icono */
-    background-color: white; /* Fondo blanco para destacar el borde */
-    box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total */
-    z-index: 2;
-  }
+body::after {
+  left: 90%; /* Ajuste de la posición hacia la derecha */
+}
 
-  .navegador{
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+/* INDEX.HTML */
+/* Parte del navegador*/
+button {
+  border-radius: 10px;
+}
+.registroUsuario {
+  margin-right: 20px;
+  z-index: 2;
+}
 
-  .botonAdmin{
-    padding: 10px;
-    font-size: large;
-    border-radius: 10px;
-    margin-left: 20px;
-  }
-  
+svg path {
+  fill: white;
+  stroke: #01012f; /* Color del borde */
+  stroke-width: 2;
+  z-index: 2;
+}
+.navegador svg {
+  border: 3px solid #01012f;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: white;
+  box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total */
+  z-index: 2;
+}
+
+.navegador {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.botonAdmin {
+  padding: 10px;
+  font-size: large;
+  margin-left: 20px;
+}
+
+.botonAdmin:hover {
+  box-shadow: 1px 1px 10px white, -1px -1px 10px white;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* PARTE DE LA PAGINA DE ADMINISTRADORES */
+/* Parte navegador */
+.navegador2 {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  color: white;
+  margin: 0px 2% 20px;
+  position: relative; /* Necesario para posicionar el ícono */
+}
+
+.navegador2 h1 {
+  flex-grow: 1; /* Hace que el h1 ocupe todo el espacio disponible */
+  text-align: center;
+  margin: 0;
+}
+
+.navegador2 a {
+  position: absolute;
+  left: 0; /* Mueve el ícono al borde derecho */
+}
+
+.navegador2 svg {
+  border: 3px solid #01012f;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: white;
+  box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total */
+  z-index: 2;
+}
+
+/* Parte main */
+.container {
+  height: 700px;
+}
+.zonaB {
+  background-color: #384358;
+  text-align: center;
+  color: white;
+  margin: 20px 5% 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  height: 100%;
+}
+
+/* Parte USUARIO */
+.contenedorUsuarios {
+  background-color: white;
+  border: 3px solid #7a4b31;
+  border-radius: 10px;
+  overflow-y: scroll;
+  height: 80%;
+}
+
+.contenidoUsuarios {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  background-color: #384358;
+  border-radius: 10px;
+  height: 12%;
+}
+
+.eliminarUsu {
+  background-color: #5a1b1f;
+  color: #ffffff;
+  height: 70%;
+}
+
+.modificarUsu {
+  background-color: #5a1b1f;
+  color: white;
+  height: 70%;
+}
+
+p {
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.aniadirUsuario {
+  font-size: large;
+  font-weight: bold;
+  width: 100%;
+  height: 40px;
+  margin: 10px 0px;
+  height: 9%;
+}
+
+/* Parte CLUB */
+.aniadirClub{
+  font-size: large;
+  font-weight: bold;
+  width: 100%;
+  height: 40px;
+  margin: 10px 0px;
+  height: 9%;
+}
+
+.eliminaClub{
+  background-color: #5a1b1f;
+  color: #ffffff;
+  height: 70%;
+}
+
+.modificaClub {
+  background-color: #5a1b1f;
+  color: white;
+  height: 70%
+}
+
+.contenedorClub {
+  background-color: white;
+  border: 3px solid #7a4b31;
+  border-radius: 10px;
+  overflow-y: scroll;
+  height: 80%;
+}
+
+.contenidoClub {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  background-color: #384358;
+  border-radius: 10px;
+  height: 12%;
+}
