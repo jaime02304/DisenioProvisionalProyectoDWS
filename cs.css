@@ -55,7 +55,7 @@ svg path {
   z-index: 2;
 }
 svg{
-  transition: box-shadow 1s ease;
+  transition: box-shadow .5s ease;
 }
 
 svg:hover {
@@ -88,7 +88,7 @@ svg:hover {
   padding: 10px;
   font-size: large;
   margin-left: 20px;
-  transition: box-shadow 1s ease;
+  transition: box-shadow .5s ease;
 }
 
 .botonAdmin:hover {
