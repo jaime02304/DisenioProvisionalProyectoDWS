@@ -29,41 +29,56 @@
           />
         </svg>
       </a>
-      <h1 class="Login">LOGIN</h1>
     </nav>
 
-    <main class="container w-75">
+    <main class="container2 w-100">
       <div class="row w-100 zonaLogin">
         <div class="col-4 zonaLoginForm">
           <form class="w-100 formulario">
             <h1 class="nombreLogin">LOGIN</h1>
             <div class="contenidoLogin">
-              <input
-                type="text"
-                placeholder="Correo electrónico"
-                class="correo"
-              />
-              <input
-                type="password"
-                placeholder="Contraseña"
-                class="contrasenia"
-              />
-              <label class="labelRecuerdame">
-                <input type="checkbox" class="recuerdame" /> Recuérdame
-              </label>
-              <button class="botonParaAcceder">Acceder</button>
+              <div class="divCorreo">
+                <input
+                  type="text"
+                  placeholder="Correo electrónico"
+                  class="correo"
+                />
+              </div>
+              <div class="divContra">
+                <input
+                  type="password"
+                  placeholder="Contraseña"
+                  class="contrasenia"
+                />
+              </div>
+              <!-- <div class="divCheckbox form-check">
+                <label class="labelRecuerdame form-check-label">
+                  <input type="checkbox" class="recuerdame form-check-input" /> Recuérdame
+                </label>
+              </div> -->
+              <div class="form-check divCheckbox">
+                <input class="form-check-input recuerdame" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label labelRecuerdame" for="flexCheckDefault">
+                  Recuérdame
+                </label>
+              </div>
+              <div class="divBoton">
+                <button class="botonParaAcceder">Acceder</button>
+              </div>
             </div>
           </form>
         </div>
 
-        <div class="col-4 zonaLoginImagenes">
+        <div class="col-4 d-lg-block d-none zonaLoginImagenes">
           <div class="image-box top">
-            <img src="motoAzul.jpg" alt="Imagen de moto 1" />
+            <img src="motoAzul.jpg" alt="Imagen de moto 1" class="imagen1" />
           </div>
           <div class="image-box">
-            <img src="descarga.jpg" alt="Imagen de moto 2" />
+            <img src="descarga.jpg" alt="Imagen de moto 2" class="imagen2" />
           </div>
         </div>
+
+
       </div>
     </main>
     <script
@@ -73,4 +88,3 @@
     ></script>
   </body>
 </html>
-
