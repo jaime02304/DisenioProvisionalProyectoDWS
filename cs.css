@@ -178,7 +178,7 @@ p {
 }
 
 /* Parte CLUB */
-.aniadirClub{
+.aniadirClub {
   font-size: large;
   font-weight: bold;
   width: 100%;
@@ -187,7 +187,7 @@ p {
   height: 9%;
 }
 
-.eliminaClub{
+.eliminaClub {
   background-color: #5a1b1f;
   color: #ffffff;
   height: 70%;
@@ -196,7 +196,7 @@ p {
 .modificaClub {
   background-color: #5a1b1f;
   color: white;
-  height: 70%
+  height: 70%;
 }
 
 .contenedorClub {
@@ -216,4 +216,70 @@ p {
   background-color: #384358;
   border-radius: 10px;
   height: 12%;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* PARTE DE LA PAGINA DEl LOGIN */
+/* Parte navegador */
+.Login {
+  font-size: xxx-large;
+}
+
+/* Parte del main */
+.zonaLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+}
+
+.nombreLogin {
+  height: 60px;
+  font-size: xx-large;
+  font-weight: bold;
+  margin: 5%;
+}
+
+.correo {
+  margin: 0px 10%;
+  border-radius: 50px;
+  height: 40px;
+}
+
+.contrasenia {
+  margin: 0px 10%;
+  border-radius: 50px;
+}
+
+.botonParaAcceder {
+  margin: 0px 10%;
+  border-radius: 50px;
+}
+
+.contenidoLogin{
+  display: flex;
+  height: 75%;
+  flex-direction: column;
+  flex: 1;
+}
+
+.zonaLoginForm {
+  flex: auto;
+  background-color: #384358;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  height: 100%;
+  margin: 10px 10% 10px 0px;
+}
+
+.formulario {
+  height: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.zonaLoginImagenes {
 }
