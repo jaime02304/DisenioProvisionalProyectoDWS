@@ -358,15 +358,17 @@ p {
 .imagen1 {
   height: 300px;
   width: 350px;
+  transform: translate(-20px, 0px);
   border-radius: 20px;
   box-shadow: 1px 1px 10px rgb(21, 138, 216), -1px -1px 20px rgb(21, 138, 216) ;
 }
+
 
 .imagen2 {
   position: relative;
   height: 300px;
   width: 350px;
-  transform: translate(200px, -60px);
+  transform: translate(140px, -60px);
   border-radius: 20px;
    box-shadow:  1px 0px 10px rgb(21, 138, 216) inset, -1px 0px 20px rgb(21, 138, 216) ; 
 }
