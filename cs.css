@@ -1,6 +1,7 @@
 /* El body de todos los index */
 html,
 body {
+  width: 100%;
   overflow: hidden; /* Desactiva el desplazamiento */
   height: 100%; /* Asegura que el contenido se ajuste al tamaño de la ventana */
 }
@@ -252,6 +253,7 @@ p {
   align-items: center;
   justify-content: center;
   height: 700px;
+  width: 90%;
 }
 
 .nombreLogin {
@@ -352,7 +354,7 @@ p {
 }
 
 .zonaLoginImagenes {
-  margin: 10px 10% 10px 0px;
+  margin: 10px 5% 10px 0px;
 }
 
 .imagen1 {
